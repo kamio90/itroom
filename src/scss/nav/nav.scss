@@ -1,11 +1,18 @@
 @import '../global/main.scss';
+@import '../global/mixins/flex.scss';
 
 .nav {
     height: 100px;
     background-color: red;
     width: 100%;
 
+    @include flex-justify-content-space-around;
+
     &__logo {
         color: white;
+    }
+
+    &__list {
+        color: blue;
     }
 }

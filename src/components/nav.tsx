@@ -6,6 +6,7 @@ export default class Nav extends React.Component {
         return (
             <nav className="nav" role="navigation">
                 <div className="nav__logo">a</div>
+                <ul className="nav__list">a</ul>
             </nav>
         );
     }
