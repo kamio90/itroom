@@ -1,10 +1,14 @@
 @import '../global/main.scss';
 @import '../global/mixins/flex.scss';
+@import '../global/mixins/btn.scss';
+@import '../global/typography.scss';
 
 .nav {
     height: 100px;
-    background-color: red;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     @include flex-justify-content-space-around;
 
@@ -14,5 +18,21 @@
 
     &__list {
         color: blue;
+    }
+
+    &__btn {
+        @include button;
+
+        background-color: #ff7000;
+        text-shadow: 0 1px #cc5a00;
+        box-shadow: inset 0 -1px #a84a00;
+        text-transform: uppercase;
+
+        @include fluid-type($min_width, $max_width, $min_font, $min_font);
+
+        &::hover {
+            background: #ff8d33;
+            box-shadow: inset 0 -1px #c25500;
+        }
     }
 }
