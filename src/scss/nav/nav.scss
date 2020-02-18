@@ -18,6 +18,28 @@
 
     &__list {
         color: blue;
+        flex-basis: 40%;
+        list-style: none;
+
+        @include flex-justify-content-space-around;
+
+        &__item {
+            padding: 5px;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+
+            @include fluid-type($min_width, $max_width, $min_font, $min_font);
+
+            &__link {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: red;
+            }
+        }
     }
 
     &__btn {
@@ -30,7 +52,7 @@
 
         @include fluid-type($min_width, $max_width, $min_font, $min_font);
 
-        &::hover {
+        &:hover {
             background: #ff8d33;
             box-shadow: inset 0 -1px #c25500;
         }
