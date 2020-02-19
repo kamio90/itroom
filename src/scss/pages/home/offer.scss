@@ -1,1 +1,9 @@
 @import '../../global/main.scss';
+@import '../../global/variables.scss';
+@import '../../global/mixins/flex.scss';
+
+.offer {
+    padding: 8rem;
+
+    @include flex-center-wrap;
+}
