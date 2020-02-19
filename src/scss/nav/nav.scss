@@ -2,6 +2,7 @@
 @import '../global/mixins/flex.scss';
 @import '../global/mixins/btn.scss';
 @import '../global/typography.scss';
+@import '../global/variables.scss';
 
 .nav {
     height: 100px;
@@ -13,11 +14,10 @@
     @include flex-justify-content-space-around;
 
     &__logo {
-        color: white;
+        flex-basis: 10%;
     }
 
     &__list {
-        color: blue;
         flex-basis: 40%;
         list-style: none;
 
@@ -26,7 +26,7 @@
         &__item {
             padding: 5px;
             font-weight: bold;
-            color: black;
+            color: $black_dark;
             cursor: pointer;
 
             @include fluid-type($min_width, $max_width, $min_font, $min_font);
@@ -37,7 +37,7 @@
             }
 
             &:hover {
-                color: red;
+                color: $black_light;
             }
         }
     }
@@ -45,16 +45,16 @@
     &__btn {
         @include button;
 
-        background-color: #ff7000;
-        text-shadow: 0 1px #cc5a00;
-        box-shadow: inset 0 -1px #a84a00;
+        background-color: $orange_light;
+        text-shadow: 0 1px $orange_dark;
+        box-shadow: inset 0 -1px $orange_dark;
         text-transform: uppercase;
 
         @include fluid-type($min_width, $max_width, $min_font, $min_font);
 
         &:hover {
-            background: #ff8d33;
-            box-shadow: inset 0 -1px #c25500;
+            background: $orange_dark;
+            box-shadow: inset 0 -1px $orange_light;
         }
     }
 }
