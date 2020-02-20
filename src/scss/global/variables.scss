@@ -2,11 +2,27 @@ $min_width: 320px;
 $max_width: 1200px;
 $min_font: 16px;
 $max_font: 24px;
+
 $mod_1: 1.2; // mobile
 $mod_2: 1.5; // desktop
+
+$index_small: -1;
+$index_medium: 2;
+$index_big: 3;
+$index_super_big: 4;
+
+//text
 $white_light: #cfcfcf;
 $white_dark: #fff;
 $black_light: #222222;
 $black_dark: #000;
 $orange_light: #ff8d33;
 $orange_dark: #ff7000;
+
+//background
+$blue_light: #4765bd;
+$blue_super_light: #0a9ab2;
+$purple_dark: #5e3a9c;
+$yellow_dark: #d29e38;
+$red_dark: #b8355d;
+$blue_dark: #2085af;
