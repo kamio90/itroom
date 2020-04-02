@@ -1,0 +1,69 @@
+@import '../../global/main.scss';
+@import '../../global/mixins/flex.scss';
+@import '../../global/variables.scss';
+
+.footer {
+    @include flex-center-column;
+    width: 100%;
+    padding: 50px 0;
+
+    &__title {
+        color: $white_dark;
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+        margin-bottom: 28px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #e6330e;
+            position: absolute;
+            top: unset;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            bottom: -18px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__wrapper {
+        width: 80%;
+
+        @include flex-justify-content-space-around;
+
+        &__person {
+            flex-basis: 50%;
+            @include flex-center-column;
+            align-items: flex-start;
+
+            &__name {
+                padding: 1rem;
+                color: $white_dark;
+            }
+
+            &__item {
+                padding: 1rem;
+                color: $white_light;
+                @include flex-justify-content-space-between;
+                justify-content: flex-start;
+
+                width: 70%;
+
+                &__description {
+                    padding: 0.5rem;
+                }
+
+                &__content {
+                    color: $white_dark;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

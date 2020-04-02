@@ -1,0 +1,111 @@
+@import '../global/main.scss';
+@import '../global/mixins/flex.scss';
+@import '../global/mixins/btn.scss';
+@import '../global/typography.scss';
+@import '../global/variables.scss';
+@import '../global/mixins/positions.scss';
+
+.modal--open {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999999;
+
+    .modal__inner {
+        background-color: $white_dark;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        &__photo {
+            height: 100%;
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-lightblue {
+                background-color: #4765bd;
+            }
+
+            &-superlightblue {
+                background-color: #0a9ab2;
+            }
+
+            &-darkpurple {
+                background-color: #5e3a9c;
+            }
+
+            &-darkyellow {
+                background-color: #d29e38;
+            }
+
+            &-darkred {
+                background-color: #b8355d;
+            }
+
+            &-darkblue {
+                background-color: #2085af;
+            }
+
+            svg {
+                width: 90%;
+                height: 90%;
+            }
+        }
+
+        &__description {
+            padding: 20px;
+            text-align: left;
+            flex-basis: 50%;
+            color: $black_light;
+            background-color: $white_dark;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+
+            p {
+                line-height: 22px;
+            }
+        }
+
+        &__title {
+            font-size: 26px;
+            position: relative;
+            margin-top: 90px;
+            margin-bottom: 53px;
+
+            &::after {
+                content: '';
+                @include position-absolute(unset, 0, 11);
+                bottom: -13px;
+                display: block;
+                width: 150px;
+                height: 2px;
+                background-color: #e6330e;
+            }
+        }
+
+        &__close {
+            right: 0;
+            @include position-absolute(0, unset, 11);
+            background: transparent;
+            border: 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+}
+
+.modal--close {
+    display: none;
+}

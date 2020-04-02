@@ -1,0 +1,62 @@
+@import '../../global/main.scss';
+@import '../../global/mixins/flex.scss';
+@import '../../global/mixins/positions.scss';
+@import '../../global/variables.scss';
+
+.about {
+    background-color: $white_dark;
+    @include flex-center-wrap;
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+        margin-bottom: 28px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #e6330e;
+            position: absolute;
+            top: unset;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            bottom: -18px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        @include flex-justify-content-space-between;
+
+        &__image {
+            flex-basis: 50%;
+            padding: 2rem;
+        }
+
+        &__wrapper {
+            flex-basis: 50%;
+            @include flex-center-wrap;
+
+            &__title {
+                text-align: left;
+                width: 100%;
+                padding: 1rem;
+                padding-right: 10rem;
+            }
+
+            &__description {
+                text-align: left;
+                padding: 1rem;
+                width: 100%;
+                padding-right: 10rem;
+            }
+        }
+    }
+}

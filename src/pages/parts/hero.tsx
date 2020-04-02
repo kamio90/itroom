@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../../scss/pages/home/hero.scss';
-import heroBg from '../../assets/sky-space-milky-way-stars-110854.jpg';
+import heroBg from '../../assets/IT-nanoni-Korab-Thaci-1.jpg';
 
 export default class Hero extends React.Component {
     render() {
@@ -12,7 +12,7 @@ export default class Hero extends React.Component {
             >
                 <h1 className="header__title">Nowoczesna Marka</h1>
                 <h3 className="header__description">
-                    Stworzona oraz dopasowywana pod upodobania klientów
+                    Stworzona oraz dopasowana do upodobań klientów
                 </h3>
             </header>
         );

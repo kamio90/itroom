@@ -1,0 +1,8 @@
+@import '../../global/main.scss';
+@import '../../global/variables.scss';
+@import '../../global/mixins/flex.scss';
+
+.portfolio {
+    width: 100%;
+    @include flex-center-wrap;
+}

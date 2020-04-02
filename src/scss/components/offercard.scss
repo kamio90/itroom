@@ -4,7 +4,7 @@
 @import '../global/mixins/flex.scss';
 
 .card {
-    flex-basis: 40%;
+    flex-basis: calc(100% / 3);
     height: 300px;
     position: relative;
     cursor: pointer;
@@ -38,6 +38,11 @@
             color: $white_dark;
             text-align: center;
             padding: 1rem;
+        }
+
+        &__description {
+            font-family: 'Gotu', sans-serif;
+            font-weight: 400;
         }
     }
 

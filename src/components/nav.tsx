@@ -1,12 +1,28 @@
 import React from 'react';
 import '../scss/components/nav.scss';
 import Button from './button';
+import Logo from '../assets/itRoom_logo.png';
 
 export default class Nav extends React.Component {
+    state = {
+        open: false
+    };
+
+    menuToggle = () => this.setState({ open: !this.state.open });
+
     render() {
         return (
             <nav className="nav" role="navigation">
-                <div className="nav__logo"></div>
+                <div className="nav__logo">
+                    <img src="/images/itRoom_logo.png" alt="" />
+                </div>
+                <div className="nav__mobile" onClick={this.menuToggle}>
+                    <div className="nav__mobile__burger">
+                        <span className="nav__mobile__burger__item"></span>
+                        <span className="nav__mobile__burger__item"></span>
+                        <span className="nav__mobile__burger__item"></span>
+                    </div>
+                </div>
                 <ul className="nav__list">
                     <li className="nav__list__item">
                         <a href="foo" className="nav__list__item__link">
@@ -29,7 +45,6 @@ export default class Nav extends React.Component {
                         </a>
                     </li>
                 </ul>
-                <Button className="nav__btn" content="Zamów połączenie" />
             </nav>
         );
     }

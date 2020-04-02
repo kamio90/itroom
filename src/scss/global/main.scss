@@ -4,4 +4,14 @@
 
 body {
     background-color: $black_dark;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.scrollarea .scrollbar-container.vertical .scrollbar {
+    background: #e6330e;
+}
+.scrollarea .scrollbar-container.vertical,
+.scrollarea .scrollbar-container.vertical:hover,
+.scrollarea .scrollbar-container:hover {
+    opacity: 1 !important;
 }
