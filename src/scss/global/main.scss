@@ -13,5 +13,5 @@ body {
 .scrollarea .scrollbar-container.vertical,
 .scrollarea .scrollbar-container.vertical:hover,
 .scrollarea .scrollbar-container:hover {
-    opacity: 1 !important;
+    opacity: 1 !important; //<3
 }

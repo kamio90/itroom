@@ -1,7 +1,5 @@
 import React from 'react';
 import '../scss/components/nav.scss';
-import Button from './button';
-import Logo from '../assets/itRoom_logo.png';
 
 export default class Nav extends React.Component {
     state = {

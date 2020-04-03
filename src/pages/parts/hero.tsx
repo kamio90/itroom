@@ -1,19 +1,22 @@
 import React from 'react';
 
 import '../../scss/pages/home/hero.scss';
-import heroBg from '../../assets/IT-nanoni-Korab-Thaci-1.jpg';
+import heroBg from '../../assets/both-hands-stained-with-paints-1161542.jpg';
 
 export default class Hero extends React.Component {
     render() {
         return (
             <header
                 className="header"
-                style={{ backgroundImage: `url(${heroBg})` }}
+                style={{
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${heroBg})`
+                }}
             >
-                <h1 className="header__title">Nowoczesna Marka</h1>
-                <h3 className="header__description">
-                    Stworzona oraz dopasowana do upodobań klientów
-                </h3>
+                <h1 className="header__title">
+                    <span className="header__title__flicker--fast">No</span>wo
+                    <span className="header__title__flicker">czes</span>na Mar
+                    <span className="header__title__flicker">ka</span>
+                </h1>
             </header>
         );
     }

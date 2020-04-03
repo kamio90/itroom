@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faAudible } from '@fortawesome/free-brands-svg-icons';
 
 import '../../scss/pages/home/footer.scss';
 
@@ -11,12 +11,23 @@ export default class Footer extends React.Component {
         return (
             <>
                 <footer className="footer">
-                    <h2 className="footer__title">Nasz team</h2>
+                    {/* <h2 className="footer__title">Nasz team</h2> */}
                     <div className="footer__wrapper">
                         <div className="footer__wrapper__person">
                             <h3 className="footer__wrapper__person__name">
                                 Kamil
                             </h3>
+                            <div className="footer__wrapper__person__item">
+                                <p className="footer__wrapper__person__item__description">
+                                    <FontAwesomeIcon icon={faAudible} />
+                                </p>
+                                <a
+                                    className="footer__wrapper__person__item__content"
+                                    href="tel:+48519599990"
+                                >
+                                    Architekt Oprogramowania
+                                </a>
+                            </div>
                             <div className="footer__wrapper__person__item">
                                 <p className="footer__wrapper__person__item__description">
                                     <FontAwesomeIcon icon={faPhone} />
@@ -57,6 +68,17 @@ export default class Footer extends React.Component {
                             </h3>
                             <div className="footer__wrapper__person__item">
                                 <p className="footer__wrapper__person__item__description">
+                                    <FontAwesomeIcon icon={faAudible} />
+                                </p>
+                                <a
+                                    className="footer__wrapper__person__item__content"
+                                    href="tel:+48730024171"
+                                >
+                                    Web Developer
+                                </a>
+                            </div>
+                            <div className="footer__wrapper__person__item">
+                                <p className="footer__wrapper__person__item__description">
                                     <FontAwesomeIcon icon={faPhone} />
                                 </p>
                                 <a
@@ -89,6 +111,12 @@ export default class Footer extends React.Component {
                                 </a>
                             </div>
                         </div>
+                        {/* <div className="footer__wrapper__person">
+                            <h3 className="footer__wrapper__person__name">
+                                Team
+                            </h3>
+                            <div className="footer__wrapper__person__item"></div>
+                        </div> */}
                     </div>
                 </footer>
             </>

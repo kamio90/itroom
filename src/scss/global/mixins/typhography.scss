@@ -25,6 +25,10 @@
             @media screen and (min-width: $max-vw) {
                 font-size: $max-font-size;
             }
+
+            @media all and (max-width: 1199px) {
+                font-size: $max-font-size - 8px;
+            }
         }
     }
 }

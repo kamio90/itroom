@@ -6,6 +6,10 @@
 .portfolio__card-left {
     .portfolio__card__item {
         order: -1;
+
+        @media all and (max-width: 980px) {
+            order: 1;
+        }
     }
 }
 
@@ -14,10 +18,15 @@
     @include flex-justify-content-space-around;
     background-color: white;
     padding: 2rem;
+    flex-wrap: wrap;
 
     .laptop {
-        flex-basis: 50%;
+        flex-basis: 600px;
         position: relative;
+
+        @media all and (max-width: 1200px) {
+            flex-basis: 450px;
+        }
 
         img {
             width: 100%;
@@ -26,14 +35,17 @@
     }
 
     &__image {
-        flex-basis: 50%;
-        height: 416px;
+        height: 274px;
         position: absolute;
-        top: 28px;
-        width: calc(100% - 124px);
+        top: 18px;
+        width: 86.5%;
         left: 0;
         right: 0;
         margin: auto;
+
+        @media all and (max-width: 1200px) {
+            height: 202px;
+        }
 
         img {
             width: 100%;
@@ -41,15 +53,37 @@
     }
 
     &__item {
-        padding: 1rem;
-        flex-basis: 50%;
+        // padding: 1rem;
+        flex-basis: calc(100% - 600px);
         @include flex-center-column;
+
+        @media all and (max-width: 980px) {
+            flex-basis: 100%;
+        }
 
         &__title {
             padding: 2rem;
             width: 100%;
             text-align: left;
             padding-right: 10rem;
+            position: relative;
+            cursor: pointer;
+
+            &__link {
+                color: $black_dark;
+                text-decoration: none;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 4%;
+                z-index: 3;
+                width: 40%;
+                height: 2px;
+                background-color: #e6330e;
+            }
         }
 
         &__description {
@@ -65,8 +99,20 @@
     .portfolio__card__item {
         &__title {
             text-align: right;
-            padding-left: 10rem;
+            // padding-left: 10rem;
             padding-right: 0rem;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: unset;
+                right: 0%;
+                z-index: 3;
+                width: 40%;
+                height: 2px;
+                background-color: #e6330e;
+            }
         }
 
         &__description {

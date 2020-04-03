@@ -22,7 +22,7 @@ export default class Portfolio extends React.Component<{}, State> {
             src: Dentroom,
             alt:
                 'www.itroom.pl - zdjęcie wyróżniające sekcje realizacje dentroom',
-            title: 'www.dentroom.pl',
+            title: 'dentroom.pl',
             description:
                 'Strona internetowa dla gabinetu stomatologicznego. Strona typu onepage. Białe i niebieskie kolory sprzyjają branży dentystycznej. Wisienką na torcie są delikatne animacje, które dodają uroku. Prosta, a zarazem bardzo profesionalna strona to nasze motto. Zapraszamy serdecznie do skorzystania z profesionalnych usług stomatologicznych oferowanych przez firmę dentroom.',
             className: ''
@@ -31,7 +31,7 @@ export default class Portfolio extends React.Component<{}, State> {
             src: GabinetBogusia,
             alt:
                 'www.itroom.pl - zdjęcie wyróżniające sekcje realizacje gabinetbogusia',
-            title: 'www.gabinetbogusia.pl',
+            title: 'gabinetbogusia.pl',
             description:
                 'Strona internetowa dla gabinetu stomatologicznego. Strona typu onepage. Białe i niebieskie kolory sprzyjają branży dentystycznej. Wisienką na torcie są delikatne animacje, które dodają uroku. Prosta, a zarazem bardzo profesionalna strona to nasze motto. Zapraszamy serdecznie do skorzystania z profesionalnych usług stomatologicznych oferowanych przez firmę dentroom.',
             className: '-left'
@@ -40,7 +40,7 @@ export default class Portfolio extends React.Component<{}, State> {
             src: Michalscy,
             alt:
                 'www.itroom.pl - zdjęcie wyróżniające sekcje realizacje michalscy',
-            title: 'www.michalscy.pl',
+            title: 'michalscy.pl',
             description:
                 'Strona internetowa dla gabinetu stomatologicznego. Strona typu onepage. Białe i niebieskie kolory sprzyjają branży dentystycznej. Wisienką na torcie są delikatne animacje, które dodają uroku. Prosta, a zarazem bardzo profesionalna strona to nasze motto. Zapraszamy serdecznie do skorzystania z profesionalnych usług stomatologicznych oferowanych przez firmę dentroom.',
             className: ''

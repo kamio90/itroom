@@ -130,22 +130,20 @@ export default class Offer extends React.Component<{}, State> {
         return (
             <section className="offer">
                 {this.state.map((value, key) => (
-                    <>
-                        <OfferCard
-                            key={key}
-                            title={value.title}
-                            description={value.description}
-                            src={value.src}
-                            alt={value.src}
-                            className={value.className}
-                            modalTitle={value.modalTitle}
-                            modalDescription={value.modalDescription}
-                            modalAlt={value.modalAlt}
-                            modalSrc={value.modalSrc}
-                            modalClassName={value.modalClassName}
-                            svg={value.svg}
-                        />
-                    </>
+                    <OfferCard
+                        key={key}
+                        title={value.title}
+                        description={value.description}
+                        src={value.src}
+                        alt={value.src}
+                        className={value.className}
+                        modalTitle={value.modalTitle}
+                        modalDescription={value.modalDescription}
+                        modalAlt={value.modalAlt}
+                        modalSrc={value.modalSrc}
+                        modalClassName={value.modalClassName}
+                        svg={value.svg}
+                    />
                 ))}
             </section>
         );

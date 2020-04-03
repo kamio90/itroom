@@ -1,8 +1,6 @@
 import React from 'react';
 import '../scss/components/offercard.scss';
 import { Modal } from './modal';
-import WebPage from './icons/webpage';
-import MobileApplication from './icons/mobileapplications';
 
 interface Props {
     title?: string;
@@ -38,8 +36,6 @@ export default class OfferCard extends React.Component<Props, {}> {
             className,
             modalTitle,
             modalDescription,
-            modalSrc,
-            modalAlt,
             modalClassName,
             svg
         } = this.props;

@@ -28,7 +28,15 @@ export default class PortfolioCard extends React.Component<Props> {
                 </div>
 
                 <div className="portfolio__card__item">
-                    <h2 className="portfolio__card__item__title">{title}</h2>
+                    <h2 className="portfolio__card__item__title">
+                        <a
+                            className="portfolio__card__item__title__link"
+                            href={`http://${title}`}
+                            target="blank"
+                        >
+                            {title}
+                        </a>
+                    </h2>
                     <p className="portfolio__card__item__description">
                         {description}
                     </p>
