@@ -18,6 +18,10 @@ h2 {
         $mod_1 * $mod_1 * $mod_1 * $min_font,
         $mod_2 * $mod_2 * $mod_2 * $min_font
     );
+
+    @media all and (max-width: 480px) {
+        font-size: $mod_1 * $mod_1 * $mod_1 * 0.7rem;
+    }
 }
 h3 {
     font-size: $mod_1 * $mod_1 * 1rem;

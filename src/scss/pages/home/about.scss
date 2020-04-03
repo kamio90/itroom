@@ -34,6 +34,10 @@
         //     margin-left: auto;
         //     margin-right: auto;
         // }
+
+        @media all and (max-width: 540px) {
+            padding: 0;
+        }
     }
 
     &__content {
@@ -89,7 +93,7 @@
 
                 @media all and (max-width: 768px) {
                     flex-basis: 100%;
-                    padding: 0 10%;
+                    padding: 0 45px;
                 }
             }
 

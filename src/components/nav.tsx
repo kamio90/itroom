@@ -14,14 +14,27 @@ export default class Nav extends React.Component {
                 <div className="nav__logo">
                     <img src="/images/itRoom_logo.png" alt="" />
                 </div>
-                <div className="nav__mobile" onClick={this.menuToggle}>
+                <div
+                    className={`${
+                        this.state.open
+                            ? 'nav__mobile nav__mobile-active'
+                            : 'nav__mobile'
+                    }`}
+                    onClick={this.menuToggle}
+                >
                     <div className="nav__mobile__burger">
                         <span className="nav__mobile__burger__item"></span>
                         <span className="nav__mobile__burger__item"></span>
                         <span className="nav__mobile__burger__item"></span>
                     </div>
                 </div>
-                <ul className="nav__list">
+                <ul
+                    className={`${
+                        this.state.open
+                            ? 'nav__list nav__list-active'
+                            : 'nav__list'
+                    }`}
+                >
                     <li className="nav__list__item">
                         <a href="foo" className="nav__list__item__link">
                             O nas
