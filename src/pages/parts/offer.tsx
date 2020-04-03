@@ -34,14 +34,14 @@ export default class Offer extends React.Component<{}, State> {
         {
             title: 'Strony Internetowe',
             description:
-                'Oferujemy stworzenie idealnej storny internetowej skrojonej na twoje potrzeby',
+                'Oferujemy tworzenie stron internetowych pod potrzeby i oczekiwania klienta',
             src: Web,
             alt:
                 'www.itroom.pl - Zdjęcie wyróżniające karte strony internetowe',
             className: '-lightblue',
             modalTitle: 'Kreatywne strony internetowe',
             modalDescription:
-                'Tworzymy indywidualne projekty stron internetowych. Zaczynając na projektach dla małych firm, poprzez sklepy internetowe kończąc na zawansowanych serwisach internetowych. W swojej pracy używamy najnowszych technologi oraz najnowszych trendów stosowanych w webdevelopencie. Powierzając nam piecze nad twoim projektem masz pewność, że będzie zrobiony od podstaw oraz doprowadzony do końca idealnie.',
+                'Tworzymy indywidualne projekty stron internetowych. Zaczynając od prostych nie skomplikpowanych stron poprzez nowoczesne progresive web app na sklepach internetowych kończąc. W swojej pracy używamy najnowszych technologi oraz trendów stosowanych w webdevelopencie. Powierzając nam piecze nad Waszym projektem masz pewność, że będzie zrobiony od podstaw do końca.',
             modalSrc: Web,
             modalAlt:
                 'www.itroom.pl - Zdjęcie wyróżniające modal strony internetowe',
@@ -51,13 +51,13 @@ export default class Offer extends React.Component<{}, State> {
         {
             title: 'Aplikacje Mobilne',
             description:
-                'Oferujemy stworzenie autorskiej aplikacji działającej pod wszytkimi systemami',
+                'Tworzymy autorskie aplikacje mobilne zgodnie z trendami rynkowymi i potrzebami klienta',
             src: Mobile,
             alt: 'www.itroom.pl - Zdjęcie wyróżniające karte aplikacje mobilne',
             className: '-superlightblue',
             modalTitle: 'Kreatywne aplikacje mobilne',
             modalDescription:
-                'Masz genialny pomysł na aplikację? Pozwól nam go wykonać. W aktualnych czasach każdy korzysta z rozmaitych aplikacji mobilnych, więc twój pomysł na super aplikacje może przerodzić się w wielki biznes. Czy to gra czy to aplikacja nasz team dołoży wszelkich starań, aby dostarczyć przyszłym użytkownikom jak najlepszych wrażeń. Tworzymy aplikcaję w technologi Cross-Platform. Co to dla ciebie znaczy, że ta sama aplikacja będzie dostępna zarówno na urządzenia z systemem operacyjmym android jak i IOS',
+                'Masz genialny pomysł na aplikację? Pozwól nam go wykonać. W aktualnych czasach każdy korzysta z rozmaitych aplikacji mobilnych, więc Twój pomysł na super aplikacje może przerodzić się w wielki biznes. Czy to gra czy to aplikacja nasz team dołoży wszelkich starań, aby dostarczyć przyszłym użytkownikom jak najlepszych wrażeń. Tworzymy aplikcaję w technologi Cross-Platform co znaczy, że aplikacja będzie dostępna na urządzeniach Android i IOS',
             modalSrc: Mobile,
             modalAlt:
                 'www.itroom.pl - Zdjęcie wyróżniające modal aplikacje mobilne',
@@ -66,14 +66,15 @@ export default class Offer extends React.Component<{}, State> {
         },
         {
             title: 'Aplikacje Komputerowe',
-            description: 'Oferujemy stworzenie programu komputerowego',
+            description:
+                'Staramy się wspierać naszych klientów w ich potrzebach związanych z aplikacjami komputerowymi',
             src: Desctop,
             alt:
                 'www.itroom.pl - Zdjęcie wyróżniające karte aplikacje komputerowe',
             className: '-darkpurple',
             modalTitle: 'Kreatywne aplikacje komputerowe',
             modalDescription:
-                'Korzystamy z wielu aplikacji komputerowych, które ułatwiają nam życie w codziennych czynnościach. Nasza ekipa pomoże Ci rowinąć aktualne aplikacje lub stworzyć zupełnie nową. Możemy połączyć twoją aktualną aplikacje mobilną z aplikacją komputerową, aby uzyskać płyny strumień danych.',
+                'Na codzien korzystamy z wielu aplikacji komputerowych, internetowych i moblinych. Często irytując się ich niekompatibilnością. Nasz Team pomoże udrożnić przpływ danych, dostosować aplikację do twoich potrzeb lub stworzyć nową.',
             modalSrc: Desctop,
             modalAlt:
                 'www.itroom.pl - Zdjęcie wyróżniające modal aplikacje komputerowe',
@@ -82,14 +83,15 @@ export default class Offer extends React.Component<{}, State> {
         },
         {
             title: 'Rozwiązania serwerowe',
-            description: 'Oferujemy optymalizacje oraz zabezpieczenie serwerów',
+            description:
+                'Wszytko związane z chmurą i optymalizacją i bezpieczeństwem serwerów',
             src: Server,
             alt:
                 'www.itroom.pl - Zdjęcie wyróżniające karte rozwiązań serwerowych',
             className: '-darkyellow',
             modalTitle: 'Kreatywne rozwiązania serwerowe',
             modalDescription:
-                'Rozwiązujemy problemy związane z serwerami jak i tak zwaną warstwą backend aplikacji. W dobie wyzyskiwania danych przez osoby nie porządane twoje serwery oraz bazy danych narażone są na przeróżne ataki pozwól nam zająć się bezpieczeństwem twojej aplikacji.',
+                'Pomagamy wejść w nową e-rzeczywistość, czyli praca zdalna, praca w chmurze Rozwiązujemy problemy związane z serwerami. Pomagamy w optymalizacji, poprawnej konfiguracji i właściwym bezpieczeństwie danych.',
             modalSrc: Server,
             modalAlt:
                 'www.itroom.pl - Zdjęcie wyróżniające modal strony internetowe',
@@ -104,7 +106,7 @@ export default class Offer extends React.Component<{}, State> {
             className: '-darkred',
             modalTitle: 'Kreatywne wsparcie IT',
             modalDescription:
-                'Twoi pracownicy nie radzą sobie z obsługą komputera? Mają problem z formatowaniem tekstu w Word? Czy też nie mieją korzystać z excela? Nie przejmuj się nasza firma przyjedzie do Ciebie, przeprowadzi szkolenie z zarządania komputerem, zarządania zasobami pakietu office czy też naprawi twój zawirusowany komputer.',
+                'Masz problem z komputerem, systemem operacyjnym, chcesz zarchiwizować dane czy zoptymlizować pracę w sieci. Skontaktuj się z nami',
             modalSrc: Support,
             modalAlt: 'www.itroom.pl - Zdjęcie wyróżniające modal wsparcie IT',
             modalClassName: '-darkred',
@@ -112,13 +114,14 @@ export default class Offer extends React.Component<{}, State> {
         },
         {
             title: 'Szkolenia IT',
-            description: 'Oferujemy szkolenia IT',
+            description:
+                'Na naszych szkoleniach nauczysz się podstaw programowania, tajemnic związanych z back-end i front-end',
             src: Learning,
             alt: 'www.itroom.pl - Zdjęcie wyróżniające karte szkolenia it',
             className: '-darkblue',
             modalTitle: 'Kreatywne szkolenia IT',
             modalDescription:
-                'Nasi szkoleniowcy oferują profesionalne podejście do szkoleń programistycznych. Nauczą cię podstaw programowania, wspomogą cię na twojej drodze programistycznej oraz pokażą ci najnowsze trendy związane z branżą IT. Nie zostaniesz sam po naszych szkoleniach w każdym momencie możesz się do nas zwrócić z zapytaniem i zawsze będziemy Ci pomagać.',
+                'Szkolimy zarówno z obsługi podstawowych programów komputerowych np MSOffice, jak również przekazujemy specialistyczną wiedzę dotyczącą programowania front-end i back-end.',
             modalSrc: Learning,
             modalAlt: 'www.itroom.pl - Zdjęcie wyróżniające modal szkolenia IT',
             modalClassName: '-darkblue',

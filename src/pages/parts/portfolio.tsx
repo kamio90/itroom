@@ -24,7 +24,7 @@ export default class Portfolio extends React.Component<{}, State> {
                 'www.itroom.pl - zdjęcie wyróżniające sekcje realizacje dentroom',
             title: 'dentroom.pl',
             description:
-                'Strona internetowa dla gabinetu stomatologicznego. Strona typu onepage. Białe i niebieskie kolory sprzyjają branży dentystycznej. Wisienką na torcie są delikatne animacje, które dodają uroku. Prosta, a zarazem bardzo profesionalna strona to nasze motto. Zapraszamy serdecznie do skorzystania z profesionalnych usług stomatologicznych oferowanych przez firmę dentroom.',
+                'Kompleksowa obsługa gabinetu dentystycznego począwszy od wizualizacji - strona internetowa, konfiguracja sieci, zabezpieczenia, wsparcie IT, zdalny monitoring i kontrola dostępu.',
             className: ''
         },
         {
@@ -33,7 +33,7 @@ export default class Portfolio extends React.Component<{}, State> {
                 'www.itroom.pl - zdjęcie wyróżniające sekcje realizacje gabinetbogusia',
             title: 'gabinetbogusia.pl',
             description:
-                'Strona internetowa dla gabinetu stomatologicznego. Strona typu onepage. Białe i niebieskie kolory sprzyjają branży dentystycznej. Wisienką na torcie są delikatne animacje, które dodają uroku. Prosta, a zarazem bardzo profesionalna strona to nasze motto. Zapraszamy serdecznie do skorzystania z profesionalnych usług stomatologicznych oferowanych przez firmę dentroom.',
+                'Obsługa wizualna firmy z branży kosmetycznej. Zgodnie z życzeniem klienta i jego oczekiwaniami zaimplementowano sprawdzony i dobrze sprawdzony system CMS, który umożliwia samodzielne modyfikowanie treści',
             className: '-left'
         },
         {
@@ -42,7 +42,7 @@ export default class Portfolio extends React.Component<{}, State> {
                 'www.itroom.pl - zdjęcie wyróżniające sekcje realizacje michalscy',
             title: 'michalscy.pl',
             description:
-                'Strona internetowa dla gabinetu stomatologicznego. Strona typu onepage. Białe i niebieskie kolory sprzyjają branży dentystycznej. Wisienką na torcie są delikatne animacje, które dodają uroku. Prosta, a zarazem bardzo profesionalna strona to nasze motto. Zapraszamy serdecznie do skorzystania z profesionalnych usług stomatologicznych oferowanych przez firmę dentroom.',
+                'Branża cukiernicza to było wyzwanie... Indywidualne potrzeby klienta zostały przełożone na ekran komputera przez co wszyscy możemy podziwiać jego doskonałe wypieki',
             className: ''
         }
     ];
